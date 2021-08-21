@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+
+/* font-family: 'Merienda', cursive; */
+/* font-family: 'Ubuntu', sans-serif; */
+/* font-family: 'Klee One', cursive;
+font-family: 'Rampart One', cursive; */
+
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.back{
+    background-image: url("../assets/images/pana.jpg");
+}
+/* navbar */
+.nav{
+    padding-top: 15px;
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(93, 6, 233); */
+}
+
+.nav a {
+    align-self: center;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.nav img{
+    height: 100px;
+}
+
+.nav .nav-menu{
+    display: flex;
+}
+
+.nav-menu a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    padding-inline-start: 1.5vw;
+}
+
+.nav-menu a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0%;
+    background-color: #d658b7;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-menu a:hover{
+    color: #d658b7;
+    transition: 0.4s;
+}
+
+.nav-menu a:hover::after{
+    width: 70%;
+    transition: 0.4s;
+}
+
+/* HERO */
+
+.hero{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+
+.hero h1{
+    font-size: 6vw;
+    padding-bottom: 10px;
+    color: #d658b7;
+    text-shadow: 0px 0px 12px #d658b7;
+}
+.hero p{
+    font-size: 3.5vw;
+    color: #e59bd3;
+    text-shadow: 0px 0px 8px #d658b7;
+    font-family: 'Rampart One', cursive;
+}
+
+
+
+
+
+/* features */
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.features img {
+    width: 28vw;
+    background-color: rgba(190, 31, 230, 0.164);
+    border-radius: 10px;
+}
+
+.para{
+    font-size: 2vw;
+    font-family: 'Klee One', cursive;
+    width: 50%;
+    height: max-content;
+}
+
+.btn{
+    border: none;
+    padding: 1vw;
+    font-size: 0.8vw;
+    border-radius: 5px;
+    margin-top: 1.5vw;
+    cursor: pointer;
+    color: white;
+    background-color: #9912c2;
+}
+
+
+.btn:hover{
+    background-color: #de87f8;
+    transition: 0.2s;
+    color: black;
+}
+
+/* Sponsers */
+.sponsers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+    /* background-color: #d166ba; */
+    background: url(../assets/images/pana.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+.sponsers h1{
+    align-self: center;
+    /* padding: 50px; */
+    font-size: 6vw;
+    font-weight: lighter;
+    font-family: 'Merienda', cursive;
+    color: #de87f8;
+    text-shadow: 0px 0px 15px #de87f8;
+}
+
+.img-cont{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.img-cont img {
+    width: 15%;
+    background-color: #d75def;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #350b3d;
+    padding: 1vw;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form h1 {
+    margin-bottom: 50px;
+    align-self: center;
+}
+
+.contact img {
+    width: 20vw;
+    padding-top: 50px;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 1.2vw;
+    font-family: 'Merienda', cursive;
+    font-weight: 700;
+}
+
+input {
+    border: none;
+    background-color: rgba(126, 121, 121, 0.24);
+    border-radius: 3px;
+    width: 25vw;
+    height: 20px;
+}
+
+.big {
+    width: 25vw;
+    height: 80px;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-weight: lighter;
+}
+/* 480px media query */
+
+@media all and (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .para{
+        font-size: 3vw;
+        font-family: 'Klee One', cursive;
+        width: 50%;
+    }
+
+    .btn{
+        border: none;
+        padding: 1vw;
+        font-size: 1.5vw;
+        border-radius: 5px;
+        margin-top: 1.5vw;
+        cursor: pointer;
+        color: white;
+        background-color: #9912c2;
+    }
+    
+}
+

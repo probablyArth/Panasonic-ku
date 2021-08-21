@@ -1,0 +1,27 @@
+/* Features */
+
+.f {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+    font-size: 5vw;
+    color: blueviolet;
+    text-shadow: 5px 2px 5px black;
+    background-color: rgba(219, 206, 206, 0.404);
+    width: fit-content;
+    margin: auto;
+    padding: 25px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.paras {
+    margin: 50px;
+}
+
+.paras h3{
+    font-weight: 700; 
+}
+
+.paras p {
+    font-family: 'Klee One', cursive;
+}

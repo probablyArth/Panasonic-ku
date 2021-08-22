@@ -32,6 +32,7 @@ font-family: 'Rampart One', cursive; */
     align-self: center;
     font-weight: lighter;
     font-size: 15px;
+    
 }
 
 .nav img{
@@ -48,6 +49,7 @@ font-family: 'Rampart One', cursive; */
     color: white;
     padding-inline-start: 1.5vw;
 }
+
 
 .nav-menu a::after{
     content: "";
@@ -70,6 +72,19 @@ font-family: 'Rampart One', cursive; */
     transition: 0.4s;
 }
 
+
+/* Menu */
+
+.menu-line {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.menu {
+    display: none;
+}
 /* HERO */
 
 .hero{
@@ -263,6 +278,6 @@ footer {
         color: white;
         background-color: #9912c2;
     }
-    
+
 }
 

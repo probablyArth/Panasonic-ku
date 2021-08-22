@@ -25,3 +25,8 @@
 .paras p {
     font-family: 'Klee One', cursive;
 }
+
+.paras span {
+    font-size: 1.2vw;
+    font-style: italic;
+}
